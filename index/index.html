@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>演習2</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
+ rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+ <link rel="icon" href="../image/favicon.ico">
+</head>
+<body>
+    
+<header>
+    <p>日本大学文理学部情報科学科 Webプログラミングの演習課題</p>  
+    <p>5420075 高橋優月</p>
+</header>
+<nav>
+    <div class="boxconteiner">
+    <div class="box1">
+        <a href="#box1">
+        <h1>
+            head
+
+        </h1>
+        </a>
+    </div>
+    <div class="box2">
+        <a href="#box2">
+        <h1>
+            li
+        </h1>
+    </a>
+    </div>
+    <div class="box3">
+        <a href="#box3">
+        <h1>
+            figure
+        </h1>
+        </a>
+    </div>
+    </div>
+    </nav>
+
+
+    <div class="content1" id="box1">
+        <article>
+    <h2>head</h2>
+        <p>
+            HeadとはHtml内で最初に書くタグです。 メタデータの集まりを示します。<br>
+            </p>
+            <p>
+            Head内ではtitle要素は必須であり,Iframe sorcdoc内にhtmlが書かれている場合か<br>
+            タイトルに関する情報が上位レベルのプロトコルから(メールの件名行でHTMLを使用する<br>
+            場合など)提供される場合は省略することができます。<br></p>
+           <p> 開始タグは、要素内が空の場合か,最初の内容が要素なら省略でき、終了タグは直後に空<br
+            >白文字かコメントでなければ省略できます。
+            
+        </p>
+    </article>
+        
+        <div class="display">
+        <div class="code">
+            <pre>
+                <code>
+&lt;head&gt;
+     &lt;meta charset=&quot;utf-8&quot;&gt;
+     &lt;title&gt;タイトル要素	&lt;/title&gt;/*タイトル*/
+     &lt;link rel="icon" href=&quot;favicon.ico&quot;&gt;/*ファビコンに関するメタ情報*/
+&lt;/head&gt;
+                </code>
+                </pre>
+        </div>
+        <div class="result">
+         <img src="../image/タイトル.png" alt="コードの実行結果">
+        </div>
+        </div>
+    </div>
+
+    <div class="content2" id="box2">
+        <article>
+        <h2>ul</h2>
+        <p>&lt;ul&gt;は子要素に0 個以上の li 要素とスクリプトサポート要素を書くことができます。</p>
+            <p>この要素は項目をリストとして表し、項目の前に・をつけ箇条書きを行います。</br>
+            つまり、リストの順序を変更しても意味が通じるものをリストとして書くときに使います。 </p>
+        </article>
+        <div class="display">
+        <div class="code">
+            <pre>
+                <code>
+&lt;p&gt;欲しいものリスト
+     &lt;ul&gt;
+    &lt;li&gt;リンゴ
+    &lt;li&gt;オレンジ
+    &lt;li&gt;パイナップル   
+&lt;/ul&gt;
+                </code>
+            </pre>
+        </div>
+        <div class="result">
+            <div class="result">
+                <img src="../image/リスト.png"
+                alt="result">
+        </div>
+        </div>
+    </div>
+
+
+    <div class="content3" id="box3">
+       <article>
+            <h2>Figure</h2>
+            <p>&lt;figure&gt;はフローコンテンツ、区分化ルート、知覚可能コンテンツです。</p>
+               <p>また、親要素はフローコンテンツを入れることができる要素です。<br>
+                子要素には、フローコンテンツ、figcaption要素, figcaptionタグと<br>
+                それに続くフローコンテンツ、フローコンテンツに続くfigcaptionタグ<br>
+                を入れることができます。開始、閉じタグの省略はできません。</p>
+                <p>このタグは,本文から参照されますが、本文の流れに影響を与えず文章内<br>
+                で移動することが可能なものに使います。つまり、figure内の内容だけ抜き取っても<br>
+                情報が伝わってくる自己完結的なものということです。Figcaptionを使用し、図に説<br>
+                明をつけてページのスタイルを変えることが推奨されています。また,引用にも用いられます。
+                </p>
+       </article>
+            <div class="display">
+                <div class="code">
+                <pre>
+                    <code>
+    &lt;figure&gt;
+      &lt;img src=&quot;image/mydog.jpg&quot;alt=&quot;my dog&quot;
+    &lt;/figure&gt;
+        </code>
+        </pre>
+    </div>
+            <div class="result">
+                <img src="../image/figure.png"
+                alt="result">
+            </div>
+            </div>
+    </div>
+<footer>
+    参考文献：<cite><a href="https://html.spec.whatwg.org/multipage/#toc-semantics">HTML（WHATWG Living Standard)</a></cite>
+</footer>
+</body>
